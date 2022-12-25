@@ -38,6 +38,7 @@ header {
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 header > h1 {
@@ -56,12 +57,13 @@ header > p {
     color: white;
     max-width: 500px;
     margin: auto;
-    margin-bottom: 30px;
-    padding: 0px 10px 0px 10px;
+    padding-bottom: 30px;   padding: 0px 10px 0px 10px;
     text-shadow: 2px 2px 0px #00000081;
 }
 
 nav {
+
+    margin-top: -1px;
 
     background-color:var(--cor0);
     padding: 10px;
@@ -73,6 +75,7 @@ nav a {
     padding: 10px;  
     text-decoration: none;
     font-weight: bold;
+    line-height: 2rem;
 }
 
 nav a:hover {
@@ -212,4 +215,11 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width:510px) {  
+
+    aside ul{
+        columns: 1;
+    }
 }
